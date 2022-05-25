@@ -19,7 +19,7 @@ class FlagsMenu: NSObject, NSMenuDelegate {
 
 		let sources = FlagSourceManager.shared.sources()
 
-		for source in sources.filter( { $0.isKeyboardInputSource }) {
+		for source in sources.filter({ $0.isKeyboardInputSource }) {
 			let title = source.locName ?? source.identifier ?? "?"
 			let menuItem = THMenuItem(title: title, block: { () in
 				FlagSourceManager.shared.setSource(source, selected: true)
@@ -51,12 +51,10 @@ class FlagsMenu: NSObject, NSMenuDelegate {
 			menu.addItem(NSMenuItem.separator())
 		}
 
-		let menuItem = THMenuItem(title: THLocalizedString("Preserve Keyboard Layout by app"), block: { () in
-
-		})
-		menu.addItem(menuItem)
-
-		menu.addItem(NSMenuItem.separator())
+		menu.addItem(THMenuItem(title: THLocalizedString("Open ISFlag Preferences…"), block: { () in
+			NSApplication.shared.activate(ignoringOtherApps: true)
+			PreferencesWindowController.shared.showWindow(nil)
+		}))
 
 		menu.addItem(THMenuItem(title: THLocalizedString("Open Keyboard Preferences…"), block: { () in
 			let prefPane = "/System/Library/PreferencePanes/Keyboard.prefPane"

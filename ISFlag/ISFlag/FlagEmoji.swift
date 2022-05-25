@@ -20,9 +20,13 @@ struct FlagEmoji {
 			if country == "Russian" {
 				return "🇷🇺"
 			}
+			if country == "German" {
+				return "🇩🇪"
+			}
 			if country == "SwissGerman" {
 				return "🇩🇪"
 			}
+
 		}
 		return nil
 	}

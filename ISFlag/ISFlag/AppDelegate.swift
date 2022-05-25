@@ -9,6 +9,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	private let statusIcon = StatusIcon()
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
+		THLogInfo("aNotification:\(aNotification)")
+
+#if DEBUG
+		THRunningApp.killOtherApps()
+#endif
+
 		if THAppInLoginItem.loginItemStatus() != .on {
 			THAppInLoginItem.setIsLoginItem(true)
 		}

@@ -13,6 +13,9 @@
 		BE62FEF32834125000D3A066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE62FEF22834125000D3A066 /* AppDelegate.swift */; };
 		BE62FEF72834125200D3A066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE62FEF62834125200D3A066 /* Assets.xcassets */; };
 		BE62FEFA2834125200D3A066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE62FEF82834125200D3A066 /* Main.storyboard */; };
+		BE88492D283ECC0300FB15F7 /* THRunningAppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88492C283ECC0300FB15F7 /* THRunningAppExtensions.swift */; };
+		BED927772839749A00C9D249 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED927752839749A00C9D249 /* PreferencesWindowController.xib */; };
+		BED927782839749A00C9D249 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED927762839749A00C9D249 /* PreferencesWindowController.swift */; };
 		BEDD8D9C2838186E00C0DCB0 /* THHotKeyFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD8D9B2838186E00C0DCB0 /* THHotKeyFieldView.m */; };
 		BEE577AC28355DDB0012421F /* THStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5772428355DDB0012421F /* THStringExtensions.swift */; };
 		BEE577AD28355DDB0012421F /* THDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE5772528355DDB0012421F /* THDateExtensions.swift */; };
@@ -49,6 +52,9 @@
 		BE62FEF62834125200D3A066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE62FEF92834125200D3A066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE62FEFB2834125200D3A066 /* ISFlag.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISFlag.entitlements; sourceTree = "<group>"; };
+		BE88492C283ECC0300FB15F7 /* THRunningAppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THRunningAppExtensions.swift; sourceTree = "<group>"; };
+		BED927752839749A00C9D249 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		BED927762839749A00C9D249 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		BEDD8D9A2838186E00C0DCB0 /* THHotKeyFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THHotKeyFieldView.h; sourceTree = "<group>"; };
 		BEDD8D9B2838186E00C0DCB0 /* THHotKeyFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THHotKeyFieldView.m; sourceTree = "<group>"; };
 		BEE5772428355DDB0012421F /* THStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THStringExtensions.swift; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 		BE62FEF12834125000D3A066 /* ISFlag */ = {
 			isa = PBXGroup;
 			children = (
+				BED927762839749A00C9D249 /* PreferencesWindowController.swift */,
+				BED927752839749A00C9D249 /* PreferencesWindowController.xib */,
 				BE2AF41A283664AE002C6E03 /* FlagsMenu.swift */,
 				BEEAC0A628380FE00076CF42 /* FlagEmoji.swift */,
 				BEE57803283568090012421F /* FlagSource.swift */,
@@ -149,9 +157,10 @@
 				BEE5773428355DDB0012421F /* THExtensions.swift */,
 				BEE5772F28355DDB0012421F /* THFileManagerExtensions.swift */,
 				BEE5772B28355DDB0012421F /* THFormatterExtensions.swift */,
-				BEE5772C28355DDB0012421F /* THNSMenuExtensions.swift */,
 				BE2AF417283655B0002C6E03 /* THNSImageExtensions.swift */,
+				BEE5772C28355DDB0012421F /* THNSMenuExtensions.swift */,
 				BEE5772428355DDB0012421F /* THStringExtensions.swift */,
+				BE88492C283ECC0300FB15F7 /* THRunningAppExtensions.swift */,
 			);
 			path = THExtensions;
 			sourceTree = "<group>";
@@ -254,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED927772839749A00C9D249 /* PreferencesWindowController.xib in Resources */,
 				BE62FEF72834125200D3A066 /* Assets.xcassets in Resources */,
 				BE62FEFA2834125200D3A066 /* Main.storyboard in Resources */,
 			);
@@ -267,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2AF41628365425002C6E03 /* StatusIcon.swift in Sources */,
+				BE88492D283ECC0300FB15F7 /* THRunningAppExtensions.swift in Sources */,
 				BEE577E928355DDB0012421F /* THHotKeyCenter.m in Sources */,
 				BEE577B628355DDB0012421F /* THDataExtensions.swift in Sources */,
 				BEE577D728355DDB0012421F /* THLog.swift in Sources */,
@@ -277,6 +288,7 @@
 				BEE577EA28355DDB0012421F /* THHotKeyCenter.swift in Sources */,
 				BEE57804283568090012421F /* FlagSource.swift in Sources */,
 				BEE577FF28355EC10012421F /* THLog.m in Sources */,
+				BED927782839749A00C9D249 /* PreferencesWindowController.swift in Sources */,
 				BE62FEF32834125000D3A066 /* AppDelegate.swift in Sources */,
 				BEE577CD28355DDB0012421F /* THFoundation.swift in Sources */,
 				BEE577B128355DDB0012421F /* THFormatterExtensions.swift in Sources */,

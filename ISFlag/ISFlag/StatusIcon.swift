@@ -24,6 +24,7 @@ class StatusIcon: NSObject {
 		let source = FlagSourceManager.shared.selectedSources()
 
 		if let flag = FlagEmoji.iconFlag(from: source.identifier) {
+			barItem.button!.title = ""
 			barItem.button!.image = flag
 		}
 		else {
