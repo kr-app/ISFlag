@@ -72,6 +72,7 @@ class PreferencesWindowController : NSWindowController, NSWindowDelegate,
 			let path = app.bundleURL!.path
 			appObjectItems.append(AppObjectItem(app: app, title: title, path: path))
 		}
+		appObjectItems.sort(by: { $0.title > $1.title })
 
 		self.flagSources = FlagSourceManager.shared.sources().filter({ $0.isKeyboardInputSource } )
 		self.appObjectItems = appObjectItems
